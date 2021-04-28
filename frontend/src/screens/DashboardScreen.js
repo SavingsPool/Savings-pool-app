@@ -56,6 +56,7 @@ export default function DashboardScreen() {
               </div>
             </li>
           </ul>
+          <hr></hr>
           <div>
             <div>
               <h2>Sales</h2>
@@ -75,6 +76,7 @@ export default function DashboardScreen() {
               )}
             </div>
           </div>
+          <hr></hr>
           <div>
             <h2>Categories</h2>
             {summary.productCategories.length === 0 ? (

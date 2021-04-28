@@ -79,14 +79,14 @@ export default function SearchScreen(props) {
       </div>
       <div className="row top">
         <div className="col-1">
-          <h3>Department</h3>
+          <h3 class="title">Department</h3>
           <div>
             {loadingCategories ? (
               <LoadingBox></LoadingBox>
             ) : errorCategories ? (
               <MessageBox variant="danger">{errorCategories}</MessageBox>
             ) : (
-              <ul>
+              <ul class="list">
                 <li>
                   <Link
                     className={'all' === category ? 'active' : ''}
@@ -109,7 +109,7 @@ export default function SearchScreen(props) {
             )}
           </div>
           <div>
-            <h3>Price</h3>
+            <h3 class="title">Price</h3>
             <ul>
             {prices.map((p) => (
                 <li key={p.name}>
@@ -126,7 +126,7 @@ export default function SearchScreen(props) {
             </ul>
             </div>
           <div>
-            <h3>Avg. Customer Review</h3>
+            <h3 class="title">Avg. Customer Review</h3>
             <ul>
               {ratings.map((r) => (
                 <li key={r.name}>

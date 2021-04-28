@@ -48,6 +48,7 @@ export default function HomeScreen() {
           </Carousel>
         </>
       )}
+      <hr></hr>
       <h2>Featured Products</h2>
       {loading ? (
         <LoadingBox></LoadingBox>

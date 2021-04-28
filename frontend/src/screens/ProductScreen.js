@@ -57,7 +57,7 @@ export default function ProductScreen(props) {
         <MessageBox variant="danger">{error}</MessageBox>
       ) : (
         <div>
-          <Link to="/">Back to result</Link>
+          <Link to="/"><span class = "back">&lsaquo;</span></Link>
           <div className="row top">
             <div className="col-2">
               <img
@@ -153,6 +153,7 @@ export default function ProductScreen(props) {
               </div>
             </div>
           </div>
+          <hr></hr>
           <div>
             <h2 id="reviews">Reviews</h2>
             {product.reviews.length === 0 && (
@@ -167,6 +168,7 @@ export default function ProductScreen(props) {
                   <p>{review.comment}</p>
                 </li>
               ))}
+              <hr></hr>
               <li>
                 {userInfo ? (
                   <form className="form" onSubmit={submitHandler}>

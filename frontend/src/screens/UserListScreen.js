@@ -68,7 +68,7 @@ const deleteHandler = (user) => {
                   </button>
                   <button
                     type="button"
-                    className="small"
+                    className="small-1"
                     onClick={() => deleteHandler(user)}
                   >
                     Delete
